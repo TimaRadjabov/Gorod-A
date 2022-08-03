@@ -451,22 +451,38 @@ body {
 }
 
 #div1 {
+  background: url('../img/essence/1.png') 28px 28px no-repeat, #ffffff;
   grid-area: 1 / 1 / 2 / 2;
 }
+#div1 .essence__item-descr{
+  padding-top: 256px;
+}
 #div2 {
+  background: url('../img/essence/2.png') 28px 28px no-repeat, #ffffff;
   grid-area: 1 / 2 / 2 / 3;
 }
+#div2 .essence__item-descr{
+  padding-top: 268px;
+}
 #div3 {
+  background: url('../img/essence/3.png') 28px 28px no-repeat, #ffffff;
   grid-area: 1 / 3 / 2 / 4;
 }
+#div3 .essence__item-descr{
+  padding-top: 277px;
+}
 #div4 {
+  background: url('../img/essence/4.png') 28px 28px no-repeat, #ffffff;
   grid-area: 2 / 1 / 3 / 2;
 }
+#div4 .essence__item-descr{
+  padding-top: 287px;
+}
 #div5 {
+  background: url('../img/essence/5.png') 28px 28px no-repeat, #ffffff;
   grid-area: 2 / 2 / 3 / 4;
 }
 .essence__item {
-  background: #ffffff;
   border: 1px solid #dfdfdf;
   box-shadow: 70px 116px 54px rgba(0, 0, 0, 0.01),
     40px 65px 46px rgba(0, 0, 0, 0.05), 18px 29px 34px rgba(0, 0, 0, 0.09),
@@ -474,14 +490,6 @@ body {
   border-radius: 20px;
   padding: 28px;
   position: relative;
-}
-.essence__item-number {
-  font-family: "Intro-Black-Caps-Regular";
-  font-weight: 900;
-  font-size: 140px;
-  line-height: 100%;
-  color: rgba(245, 0, 0, 0.6);
-  padding-bottom: 127px;
 }
 .essence__item img {
   position: absolute;
@@ -491,21 +499,29 @@ body {
 #second {
   position: absolute;
   top: 22%;
-  left: 27%;
+  left: 26%;
 }
 #third {
   position: absolute;
   top: 22%;
-  left: 33%;
+  left: 33.4%;
 }
 #fourth {
   position: absolute;
-  top: 32%;
-  left: 25%;
+  top: 31%;
+  left: 24%;
 }
 #fifth {
-  top: 26%;
+  top: 24.6%;
   left: 8%;
+}
+.essence__item-descr {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  
 }
 .essence__item-descr {
   font-weight: 500;
@@ -611,6 +627,7 @@ body {
     text-align: center;
     position: static;
     transform: translateY(0);
+    padding-top: 167px;
   }
   .essence__item-descr {
     font-size: 16px;
@@ -619,6 +636,30 @@ body {
   .essence__subtitle {
     padding-bottom: 20px;
   }
+  #div1 .essence__item-descr {
+    padding-top: 155px;
+}
+#div2 .essence__item-descr {
+  padding-top: 200px;
+}
+#second {
+  top: 28%;
+  left: 20%;
+}
+#div3 .essence__item-descr {
+  padding-top: 190px;
+}
+#third {
+  top: 32%;
+  left: 29.4%;
+}
+#fourth {
+  left: 41%;
+  top: 106px;
+}
+#div4 .essence__item-descr {
+  padding-top: 205px;
+}
 }
 /* ======================================================= rooms ===================================================== */
 .rooms {
@@ -689,6 +730,7 @@ body {
   }
   .slider__container {
     padding: 15px 0px;
+    margin: -50px 0px;
     max-width: 300px;
   }
   .card {
@@ -747,12 +789,21 @@ body {
   .room__name {
     padding: 4px 20px;
     font-size: 16px;
-    bottom: 25px;
+    bottom: 65px;
   }
   .rooms__descr {
     font-size: 16px;
     line-height: 120%;
   }
+  .slick-dots {
+    padding-top: 0px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+.rooms__descr {
+  padding-top: 50px;
+}
 }
 
 /* ======================================= history ========================================== */
@@ -2026,8 +2077,8 @@ body {
 
 .studio__item-message {
   position: absolute;
-  top: -30px;
-  left: 120px;
+  top: -17px;
+  left: 127px;
 }
 .studio__item-descr {
   font-size: 18px;

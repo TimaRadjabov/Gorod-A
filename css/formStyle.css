@@ -40,6 +40,9 @@
   line-height: 22px;
   color: #cacaca;
 }
+.form__input:focus{
+  color: #000000;
+}
 .form__input.validate {
   border-bottom: 1px solid red;
   color: red;
@@ -57,35 +60,35 @@
   color: red;
 }
 .form__input::-webkit-input-placeholder {
-  color: #939daa;
+  color: #CACACA;
 }
 .form__input::-moz-placeholder {
-  color: #939daa;
+  color: #CACACA;
 }
 .form__input:-moz-placeholder {
-  color: #939daa;
+  color: #CACACA;
 }
 .form__input:-ms-input-placeholder {
-  color: #939daa;
+  color: #CACACA;
 }
 
 .form__input-phone {
   width: 253px;
   margin: 7px 22px 0px 18px;
-  background: url("../img/form/phone.svg") no-repeat;
+  background: url("../img/form/phone.svg") 0 50% no-repeat;
 }
 .form__input-city {
-  background: url("../img/form/nav.svg") no-repeat;
+  background: url("../img/form/nav.svg") 0 50% no-repeat;
 }
 .form__input-email {
   margin: 7px 22px 0px 18px;
 }
 .form__input-name {
   margin: 7px 21px 0 18px;
-  background: url("../img/form/User.svg") no-repeat;
+  background: url("../img/form/User.svg") 0 50% no-repeat;
 }
 .form__input-email {
-  background: url("../img/form/email.svg") no-repeat;
+  background: url("../img/form/email.svg") 0 50% no-repeat;
 }
 .form__btn {
   width: 310px;
@@ -128,4 +131,8 @@
 }
 .politicy {
   cursor: pointer;
+  text-decoration: underline;
+}
+.politicy:hover{
+  text-decoration: none;
 }

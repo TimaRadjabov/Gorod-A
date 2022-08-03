@@ -1,0 +1,374 @@
+.form__popup {
+  border-bottom: none;
+  color: #cacaca;
+  text-align: start;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+.popup {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: opacity 0.5s linear;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup.is-active {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 50px 15px;
+}
+
+.popup__content {
+  background-color: #fff;
+  max-width: 807px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 20px;
+}
+
+.btn-close {
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s linear;
+  transition: opacity 0.2s linear;
+  position: absolute;
+  top: -45px;
+  right: 0;
+}
+@media (max-width: 600px) {
+  .btn-close {
+    top: -40px;
+  }
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+  background-color: #fff;
+  height: 25px;
+  width: 2px;
+  position: absolute;
+  border-radius: 10px;
+  top: 8px;
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}
+
+.btn-close:hover {
+  transform: scale(1.1);
+}
+
+.btn-close:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+#third__modal {
+  border-radius: 20px;
+}
+#second__modal {
+  border-radius: 20px;
+}
+#first__modal {
+  border-radius: 20px;
+}
+.popup-presentation__content {
+  position: relative;
+  border-radius: 0;
+}
+
+.popup-presentation__item {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-presentation__item > img {
+  border-radius: 20px 0 0 20px;
+}
+
+.popup-presentation__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  width: 365px;
+}
+.modal__input-phone {
+	background: url("../img/form/phone.svg") 15px 50% no-repeat, rgba(217, 217, 217, 0.1);
+ }
+ .modal__input-name {
+	background: url("../img/form/User.svg") 15px 50% no-repeat, rgba(217, 217, 217, 0.1);
+ }
+ .modal__input-email {
+	background: url("../img/form/email.svg") 15px 50% no-repeat, rgba(217, 217, 217, 0.1);
+ }
+
+.popup-presentation__form {
+  border: none;
+  padding: 20px 0 0 42px;
+}
+
+@media (max-width: 976px) {
+  .popup-presentation__form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 0;
+  }
+}
+.popup-presentation__form-field {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8px;
+  padding: 0px 10px;
+}
+
+.popup-presentation__form-field input {
+  margin-right: 0;
+  padding: 8px 50px;
+  width: 374px;
+  border-bottom: none;
+	
+}
+.exit__title {
+  margin-bottom: 30px;
+}
+.popup__btn {
+	height: 65px;
+	background: #257fe7;
+	box-shadow: 0px 3px 0px #093e7c, inset -2px 2px 0px rgba(147, 197, 255, 0.4);
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	width: 377px;
+	margin: 10px auto;
+	padding: 13px 10px;
+ }
+ .phone__title {
+	padding-bottom: 10px;
+	max-width: 365px;
+ }
+ .priv-policy__title {
+	padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ 
+ .priv-policy__subtitle, .priv-policy__text {
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+ 
+ .priv-policy__list {
+	padding-left: 25px;
+	list-style: none;
+ }
+ 
+ .priv-policy__item {
+	padding-bottom: 5px;
+ }
+ .from__policy-modal {
+	max-width: 381px;
+	margin: 0 auto;
+	padding-bottom: 7px;
+	align-items: flex-start;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 125%;
+	text-align: center;
+	color: #cacaca;
+ }
+ .popup-exit .popup-presentation__title {
+	max-width: 434px;
+	margin-right: 81px;
+ }
+ 
+ 
+ .popup-phone .popup-presentation__title {
+	text-transform: uppercase;
+ }
+ 
+ .popup-politicy__content::after {
+	content: none;
+ }
+ .popup-politicy__content {
+	padding: 10px;
+ }
+ 
+ .popup-politicy .politicy-close {
+	height: 45px;
+	margin-top: 30px;
+	cursor: pointer;
+	text-decoration: underline;
+ }
+ .popup-politicy .politicy-close:hover{
+	text-decoration: none;
+ }
+ 
+ .priv-policy {
+	position: relative;
+	max-width: 760px;
+	padding: 24px 44px;
+	background-color: white;
+	color: black;
+	font-size: 16px;
+ }
+ .third__policy{
+	margin-right: 50px;
+ }
+ 
+
+@media (max-width: 1160px) {
+	.popup-presentation__form {
+		border: none;
+		padding: 20px 15px;
+  }
+  .third__policy{
+	margin-right: 25px;
+ }
+  .popup-presentation__item>*{
+	flex: 1 1 50%;
+  }
+  .popup-presentation__form-field input{
+	margin-top: 10px;
+  }
+  .popup__btn {
+	width: 330px;
+	height: 65px;
+	margin: 15px auto;
+	margin-left: 8px;
+}
+  .exit__title {
+    margin-bottom: 0;
+  }
+  .popup-presentation__form-field input {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .from__policy-modal {
+	padding-bottom: 0px;
+	margin-top: 0px;
+}
+.form__popup {
+	font-size: 15px;
+ }
+}
+@media (max-width: 800px) {
+	.popup-presentation__item{
+		flex-direction: column;
+	}
+	.popup-presentation__item img{
+		display: none;
+	}
+	.popup-presentation__title {
+		width: auto;
+		padding: 15px;
+  }
+  .phone__title {
+	max-width: 100%;
+}
+.third__policy{
+	margin-right: 60px;
+ }
+ .popup-exit .popup-presentation__title {
+	margin-right: 0px;
+	padding-bottom: 15px;
+}
+}
+@media (max-width: 600px) {
+	.popup-presentation__form {
+		padding: 15px;
+  }
+  .popup-presentation__title {
+	padding: 0px;
+}
+.popup-presentation__title {
+	font-size: 17px;
+}
+.popup-presentation__form-field {
+	margin-top: 0px;
+	padding: 0px;
+}
+.form__field {
+	max-width: 240px;
+}
+.form__popup {
+	font-size: 12px;
+}
+.modal__input-phone {
+	background: url("../img/form/phone.svg") 2px 50% no-repeat, rgba(217, 217, 217, 0.1);
+ }
+ .modal__input-name {
+	background: url("../img/form/User.svg") 2px 50% no-repeat, rgba(217, 217, 217, 0.1);
+ }
+ .modal__input-email {
+	background: url("../img/form/email.svg") 2px 50% no-repeat, rgba(217, 217, 217, 0.1);
+ }
+ .popup-presentation__form-field input {
+	padding: 8px 28px;
+}
+.form__popup {
+	margin-left: 0px;
+}
+.popup-presentation__form-field input {
+	margin: 5px auto;
+}
+.popup__btn {
+	width: 240px;
+	height: 55px;
+	margin-left: 0px;
+}
+.popup-phone .popup-presentation__title {
+	padding-bottom: 15px;
+}
+.third__policy{
+	margin-right: 0px;
+ }
+}
+
+
+
+
