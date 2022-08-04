@@ -10,11 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+  />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/thanks.css" />
-    <title>Город-А</title>
+    <title>Франшиза музыкальной студии</title>
   </head>
   <body id="thanks-body">
     <div class="wrapper thanks-wrapper">
@@ -34,7 +39,9 @@
                 >+7 (913) 667-50-71</a
               >
               <div class="phone__link">
-                <a class="modal-phone" data-id="#phone"> заказать звонок </a>
+                <a class="modal-phone thanks__phone" data-id="#phone">
+                  Позвоните сейчас, чтобы не ждать звонка
+                </a>
               </div>
             </div>
           </div>
@@ -45,8 +52,7 @@
           <div class="container">
             <div class="thanks__main">
               <div class="main__content">
-                <h1 class="main__title wow fadeInUp">
-                </h1>
+                <h1 class="main__title wow fadeInUp"></h1>
                 <p class="main__working wow fadeInUp">
                   Для обсуждения сотрудничества мы&nbsp;свяжемся с&nbsp;Вами
                   в&nbsp;ближайшее время График работы компании:
@@ -54,13 +60,13 @@
                 </p>
                 <div class="main__video wow fadeInUp">
                   <div class="thanks__video-play">
-                    <a
-                      href="https://disk.yandex.ru/d/9DuR6WboLo-6dQ/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D0%B8/FinalVideo_1638722839.341035.mov"
-                    >
-                      <div class="thanks__video-block">
-                        <img src="./img/thanks/poster.svg" alt="poster" />
-                      </div>
-                    </a>
+                    <div class="thanks__video-play">
+                      <a data-fancybox href="https://www.youtube.com/watch?v=3Yoe5rl7PA8"  data-width="1000" data-height="700">
+                        <div class="thanks__video-block">
+                          <img src="./img/thanks/poster.svg" alt="poster" />
+                        </div>
+                       </a>
+                    </div>
                   </div>
                   <div class="main__video-descr">
                     <div class="main__video-later">
@@ -149,7 +155,10 @@
         <div class="container">
           <div class="footer__content">
             <div class="footer__about">
-              <span>«Студия Город.А» ®, 2018-<span class="date-now">2022</span> г.</span>
+              <span
+                >«Студия Город.А» ®, 2018-<span class="date-now">2022</span>
+                г.</span
+              >
               <span>ИП Кунгурцев Илья Евгеньевич,</span>
               <span>ИНН 551905136728</span>
               <span>Россия, Краснодарский край, г. Сочи</span>
@@ -164,7 +173,7 @@
                   >+7 (913) 667-50-71</a
                 >
                 <div class="phone__link">
-                  <a class="modal-phone" data-id="#phone"> заказать звонок </a>
+                  <a class="modal-phone" data-id="#phone"> Позвоните сейчас </a>
                 </div>
               </div>
               <div class="footer__franchise">
@@ -187,7 +196,9 @@
       </footer>
     </div>
     <script src="./js/thanks.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="/js/date.js"></script>
     <script>
       new WOW().init();
     </script>
