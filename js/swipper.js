@@ -10,7 +10,7 @@ $(function () {
     initialSlide: 1,
     responsive:[
       {
-        breakpoint: 1024,
+        breakpoint: 1070,
         settings:{
           slidesToShow: 2,
           centerMode: false,

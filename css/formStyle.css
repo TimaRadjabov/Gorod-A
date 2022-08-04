@@ -43,6 +43,9 @@
 .form__input:focus{
   color: #000000;
 }
+.form__input.special:focus{
+  color: #cacaca;
+}
 .form__input.validate {
   border-bottom: 1px solid red;
   color: red;
